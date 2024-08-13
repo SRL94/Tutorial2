@@ -8,7 +8,7 @@ def Astar_search(initial_state):
     This is where "count" comes into play.
     '''
     count=0
-    explored=set()
+    explored=list()
     start_node=Puzzle(initial_state,None,None,0)
     q = PriorityQueue()
     q.put((start_node.evaluation_function,count,start_node))
