@@ -17,7 +17,7 @@ def Astar_search(initial_state):
         node=q.get()
         print(node)
         node=node[2]
-        explored.add(node.state)
+        explored.append(node.state)
         if node.goal_test():
             return node.find_solution()
         # TO DO
